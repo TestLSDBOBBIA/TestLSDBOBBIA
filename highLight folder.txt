@@ -1,0 +1,10 @@
+local color = Color3.fromRGB(255, 255, 255)
+for i,v in pairs (workspace["Folder"]:GetChildren()) do
+	local Highlight = Instance.new("Highlight")
+	pcall(function()
+		Highlight.Adornee = v
+		Highlight.Parent = v
+		Highlight.OutlineColor = color
+		Highlight.FillColor = color
+	end)
+end
